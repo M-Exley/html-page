@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: gray;
+}
+
+body > div:not(.footer) {
+    width: 99%;
+    height: 300px;
+    margin: 1px;
+    border: solid black 2px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.head{
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-content {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.head-cont1,
+.head-cont2 {
+    height: 100px;
+    width: 350px;
+    background-color: gainsboro;
+    margin-bottom: 70px;
+}
+
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;   
+}
+
+
+.content {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox {
+    margin-top: 35px;;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.boxes {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    border: 2px solid blue;
+}
+
+.quotes p {
+    text-align: center;
+    padding: 70px;
+    font-size: large;
+}
+
+.footer {
+    height: 100px;
+    margin: 1px;
+    border: solid black 2px;
+}
