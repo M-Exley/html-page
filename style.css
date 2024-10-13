@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,19 +8,20 @@ body {
     display: flex;
     flex: 1;
     flex-direction: column;
-    background-color: gray;
+    
 }
 
 body > div:not(.footer) {
     width: 99%;
     height: 300px;
     margin: 1px;
-    border: solid black 2px;
+ 
 }
 
 .header {
     display: flex;
     flex-direction: column;
+    background-color: #1F2937;
     
 }
 
@@ -26,37 +29,72 @@ body > div:not(.footer) {
     width: 100%;
     display: flex;
     flex-grow: 1;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+
 }
 
+.logo {
+    color: #F9FAF8;
+    list-style-type: none;
+    font-size: 24px;
+    font-weight: 900;
+    margin-top: 20px;
+}
 .head-content {
     display: flex;
     gap: 20px;
     width: 100%;
-    height: 50%;
+    /* height: 50%; */
     justify-content: center;
     align-items: center;
     text-align: center;
+    list-style-type: none;
 }
 
 .head-cont1,
 .head-cont2 {
-    height: 100px;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    height: 150px;
+    padding: 2px;
     width: 350px;
-    background-color: gainsboro;
     margin-bottom: 70px;
 }
 
+.head-cont1 {
+    text-align: left;
+    color: #F9FAF8;
+}
+
+#btn-sign {
+    background-color: #3882F6;
+    padding: 5px 16px;
+    margin-top: 5px;
+    border-radius: 6px;
+    color: #F9FAF8;
+    border: 0px;;
+}
+
+.head-cont2 {
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 ul {
+    font-size: 18px;
     display: flex;
+    padding-top: 20px;;
     gap: 20px;
     list-style: none;   
 }
 
 
 .content {
+    font-size: 26px;
+    background-color: #F9FAF8; 
+    font-family: Roboto, sans-serif;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -78,6 +116,9 @@ ul {
     border: 2px solid blue;
 }
 
+.quotes {
+    background-color: #E5E7EB;
+}
 .quotes p {
     text-align: center;
     padding: 70px;
@@ -85,7 +126,19 @@ ul {
 }
 
 .footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     height: 100px;
     margin: 1px;
-    border: solid black 2px;
+    background-color:#1F2937;
+    color: #E5E7EB;
+    font-family: Roboto, sans-serif;
+}
+
+a {
+    text-decoration-line: none;
+    color: #F9FAF8;
+    font-family: Roboto, sans-serif;
 }
